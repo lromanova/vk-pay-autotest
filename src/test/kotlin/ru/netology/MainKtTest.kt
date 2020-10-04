@@ -30,7 +30,7 @@ class MainKtTest {
         val card_type: String ="vkpay"
 
         val result = calculatePeny (prev_amount =prev_amount, current_amount = current_amount, card_type = card_type)
-        assertEquals(0,result)
+        assertEquals(250,result)
     }
 
     @Test
