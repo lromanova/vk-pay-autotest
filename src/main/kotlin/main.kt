@@ -1,15 +1,8 @@
 fun main() {
-    val cur_amount: Int = (1..15_000_000).random()
-    val prev_amount: Int = (1..15_000_000).random()
-    val card_type_id: Int  = (1..5).random()
 
-    val card_type = when (card_type_id){
-        1 -> "visa"
-        2 -> "mir"
-        3 -> "maestro"
-        4 -> "mastercard"
-        else -> "vkpay"
-    }
+    val cur_amount: Int = 1_000_000
+    val prev_amount: Int = 2_000
+    val card_type = "visa"
 
     val peny = calculatePeny(prev_amount = prev_amount, current_amount = cur_amount, card_type = card_type)
 
